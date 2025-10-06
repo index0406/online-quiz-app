@@ -71,16 +71,6 @@ API Design: RESTful API endpoints (e.g., /api/quizzes/[id]) provide efficient, m
 User Management: A single dummy user (id: 1) is created via the seed script for simplicity.
 All quiz attempts are associated with this user—no authentication is required for this demo.
 
-📂 Project Structure
-online-quiz-app/
-├── prisma/                # Prisma schema & seed files
-├── app/                   # Next.js App Router structure
-├── pages/api/             # API routes for quizzes
-├── components/            # Reusable UI components
-├── tests/                 # Jest test cases
-├── package.json
-└── README.md
-
 🧑‍💻 Author
 
 Snehal Jadhav
