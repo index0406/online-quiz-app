@@ -20,10 +20,15 @@ Database integration via Prisma + SQLite
 Tailwind CSS for responsive UI
 
 🧩 Tech Stack
+
 Layer	Technology
+
 Frontend	Next.js 13+ (App Router), React, Tailwind CSS
+
 Backend	Next.js API Routes
+
 Database	SQLite with Prisma ORM
+
 Testing	Jest
 
 ⚙️ Setup & Installation
