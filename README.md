@@ -25,6 +25,7 @@ Frontend	Next.js 13+ (App Router), React, Tailwind CSS
 Backend	Next.js API Routes
 Database	SQLite with Prisma ORM
 Testing	Jest
+
 ⚙️ Setup & Installation
 
 Follow these steps to set up and run the project locally:
@@ -77,8 +78,6 @@ Snehal Jadhav
 📍 Pune, India
 📧 jadhavsnehal563@gmail.com
 
-🔗 LinkedIn
-
-License
+🪪 License
 
 This project is open source and available under the MIT License
