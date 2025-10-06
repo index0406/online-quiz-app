@@ -1,44 +1,94 @@
-Online Quiz Application
-Project Description
-This is a full-stack online quiz application built with Next.js, Prisma, and a SQLite database. The application allows users to take a multiple-choice quiz on JavaScript basics, navigate between questions, submit their answers, and view a detailed score on a results page.
+🧠 Online Quiz Application
 
-The project demonstrates a complete end-to-end user flow, from starting the quiz to receiving a final score. It features a well-designed API to support the quiz logic and robust state management on the frontend.
+A full-stack online quiz application built with Next.js, Prisma, and SQLite.
+This app allows users to take a multiple-choice quiz on JavaScript basics, navigate between questions, submit answers, and view a detailed score on the results page.
 
-Setup and Installation
-To set up and run this project locally, please follow these steps:
+The project demonstrates a complete end-to-end user flow — from starting the quiz to receiving the final score — with a robust backend API and clean frontend state management.
 
-Clone the repository:
+🚀 Features
 
-bash
+Take interactive multiple-choice quizzes
+
+Navigate between questions seamlessly
+
+Submit answers and view detailed results
+
+RESTful API built with Next.js App Router
+
+Database integration via Prisma + SQLite
+
+Tailwind CSS for responsive UI
+
+🧩 Tech Stack
+Layer	Technology
+Frontend	Next.js 13+ (App Router), React, Tailwind CSS
+Backend	Next.js API Routes
+Database	SQLite with Prisma ORM
+Testing	Jest
+⚙️ Setup & Installation
+
+Follow these steps to set up and run the project locally:
+
+1️⃣ Clone the repository
 git clone <your-repository-url>
 cd online-quiz-app
-Install dependencies:
 
-bash
+2️⃣ Install dependencies
 npm install
-Create and seed the database:
-This command will set up your SQLite database schema and populate it with a sample quiz and a test user.
 
-bash
+3️⃣ Create & seed the database
+
+This command sets up your SQLite schema and populates it with a sample quiz and test user.
+
 npx prisma migrate dev --name init
 npx prisma db seed
-Run the development server:
 
-bash
+4️⃣ Run the development server
 npm run dev
-Open the application:
-Open your browser and navigate to http://localhost:3000.
 
-How to Run Tests
-The backend API tests are configured with Jest. To run the test suite, use the following command:
+5️⃣ Open the application
 
-bash
+Visit http://localhost:3000
+ in your browser.
+
+🧪 Running Tests
+
+Backend API tests are configured with Jest.
+Run the complete test suite with:
+
 npm test
-Assumptions and Design Choices
-Frameworks: The project is built with Next.js 13+ App Router, which is the current standard for building modern React applications. Tailwind CSS was chosen for styling due to its rapid development capabilities.
 
-Database: SQLite was used for its simplicity and file-based nature, making local setup easy without requiring a separate database server. Prisma was chosen as the ORM for its type safety and developer-friendly API.
+🧱 Assumptions & Design Choices
 
-API Design: The API is designed to be RESTful. For instance, fetching a specific quiz is done via a dynamic route (/api/quizzes/[id]), which is more efficient than fetching all quizzes and filtering on the client.
+Frameworks: Built with Next.js 13+ App Router, the modern standard for React applications.
+Tailwind CSS was chosen for fast and flexible UI development.
 
-User Management: For simplicity, a single dummy user with id: 1 is created in the seed script. All quiz attempts are associated with this user, avoiding the complexity of a full authentication system for this project.
+Database: Used SQLite for simplicity and portability, avoiding the need for a dedicated server.
+Prisma ORM adds type safety and an intuitive query interface.
+
+API Design: RESTful API endpoints (e.g., /api/quizzes/[id]) provide efficient, modular data access.
+
+User Management: A single dummy user (id: 1) is created via the seed script for simplicity.
+All quiz attempts are associated with this user—no authentication is required for this demo.
+
+📂 Project Structure
+online-quiz-app/
+├── prisma/                # Prisma schema & seed files
+├── app/                   # Next.js App Router structure
+├── pages/api/             # API routes for quizzes
+├── components/            # Reusable UI components
+├── tests/                 # Jest test cases
+├── package.json
+└── README.md
+
+🧑‍💻 Author
+
+Snehal Jadhav
+📍 Pune, India
+📧 jadhavsnehal563@gmail.com
+
+🔗 LinkedIn
+
+License
+
+This project is open source and available under the MIT License
