@@ -36,10 +36,12 @@ Testing	Jest
 Follow these steps to set up and run the project locally:
 
 1️⃣ Clone the repository
+
 git clone <your-repository-url>
 cd online-quiz-app
 
 2️⃣ Install dependencies
+
 npm install
 
 3️⃣ Create & seed the database
@@ -47,9 +49,11 @@ npm install
 This command sets up your SQLite schema and populates it with a sample quiz and test user.
 
 npx prisma migrate dev --name init
+
 npx prisma db seed
 
 4️⃣ Run the development server
+
 npm run dev
 
 5️⃣ Open the application
